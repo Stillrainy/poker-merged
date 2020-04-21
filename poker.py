@@ -54,4 +54,9 @@ class Poker():
 if __name__ == '__main__':
     myPoker = Poker()
     myPoker.loadFilesName()
-    myPoker.generateImg(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
+    myPoker.generateImg(
+        int(input('width: ')),
+        int(input('height: ')),
+        int(input('number of pokers: '))
+    )
+    os.system('start output/merged.png')

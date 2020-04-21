@@ -1,1 +1,1 @@
-python -i poker.py
+python -i poker.py 147 100 5000

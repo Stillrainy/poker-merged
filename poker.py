@@ -1,6 +1,7 @@
 from PIL import Image
 import os
 import random
+import sys
 
 
 class Poker():
@@ -53,4 +54,4 @@ class Poker():
 if __name__ == '__main__':
     myPoker = Poker()
     myPoker.loadFilesName()
-    myPoker.generateImg(147, 100, 5000)
+    myPoker.generateImg(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
